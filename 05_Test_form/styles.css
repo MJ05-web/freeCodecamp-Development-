@@ -1,0 +1,132 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set a background color and font for the body */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #1b1b32;
+    padding: 20px;
+  }
+  
+  /* Center the form and add padding */
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style the title */
+  #title {
+    text-align: center;
+    color: #e9e512;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the description paragraph */
+  #description {
+    text-align: center;
+    color: #09d5f5;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Style labels */
+  label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  /* Style input fields */
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  
+  fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  label.inline {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  select {
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Placeholder Text Styling */
+  input::placeholder,
+  textarea::placeholder {
+    color: #999;
+  }
+  
+  /* Adjust form element spacing */
+  form > label,
+  form > select,
+  form > input[type="text"],
+  form > input[type="email"],
+  form > input[type="number"],
+  form > textarea,
+  form > button {
+    margin-bottom: 20px;
+  }
+  

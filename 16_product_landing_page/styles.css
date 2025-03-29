@@ -1,0 +1,225 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  h1, h2 {
+    color: #f7b700; /* Yellow color for text */
+    font-weight: bold;
+  }
+  
+  section {
+    padding: 80px 20px;
+    text-align: center;
+    padding-top: calc(80px + 20px); /* Adjusted for fixed header height */
+  }
+  
+  /* Catchy Line Section */
+  #catchy-line {
+    text-align: center;
+    padding: 100px 20px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #f7b700;
+  }
+  
+  #catchy-line p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #fff;
+  }
+  
+  /* Header */
+  #header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+  
+  #header-img {
+    width: 120px;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  #nav-bar ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  
+  #nav-bar li {
+    margin-left: 30px;
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #f7b700;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #f7b700;
+    transform: translateY(-2px);
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  
+  /* Video Section */
+  #video-section {
+    padding: 60px 20px;
+  }
+  
+  /* Ensuring video thumbnail and iframe are responsive */
+  #video-section iframe {
+    border: 5px solid #f7b700;
+    border-radius: 10px;
+    width: 100%;
+    height: 315px;
+    max-width: 100%;
+    aspect-ratio: 16 / 9; /* Maintains the 16:9 aspect ratio */
+    margin: 0 auto;
+  }
+  
+  /* Features, Pricing, How It Works, Future Scope */
+  section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  section li {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 400;
+  }
+  
+  section li:hover {
+    color: #f7b700;
+  }
+  
+  /* Enquiry Form */
+  #enquiry {
+    padding: 40px 20px;
+    background-color: #000;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  input[type="email"] {
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 2px solid #f7b700;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  input[type="submit"] {
+    padding: 15px 25px;
+    background-color: #f7b700;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #ff4081;
+    transform: translateY(-3px);
+  }
+  
+  input[type="submit"]:active {
+    transform: translateY(1px);
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #000;
+    text-align: center;
+    padding: 30px 20px;
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  footer a {
+    color: #f7b700;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  footer a:hover {
+    color: #fff;
+  }
+  
+  /* New Class for Nav-Links in Mobile */
+  @media (max-width: 768px) {
+    #nav-bar ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #nav-bar li {
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
+  
+    #header {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    #header-img {
+      margin-bottom: 10px;
+    }
+  
+    iframe {
+      max-width: 100%; /* Ensures video is responsive */
+    }
+  }
+  
+  /* Smooth Scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+  

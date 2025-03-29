@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modulation Techniques in Analog and Digital Modulation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Main Navigation Bar -->
+  <nav id="navbar">
+    <header>Modulation Techniques</header>
+    <ul>
+      <li><a class="nav-link" href="#analog_modulation">Analog Modulation</a></li>
+      <li><a class="nav-link" href="#digital_modulation">Digital Modulation</a></li>
+      <li><a class="nav-link" href="#amplitude_modulation">Amplitude Modulation</a></li>
+      <li><a class="nav-link" href="#frequency_modulation">Frequency Modulation</a></li>
+      <li><a class="nav-link" href="#phase_modulation">Phase Modulation</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Documentation -->
+  <main id="main-doc">
+    <section class="main-section" id="analog_modulation">
+      <header>Analog Modulation</header>
+      <p>Analog modulation is the process of varying the amplitude, frequency, or phase of a carrier signal in accordance with an analog message signal. This is widely used in radio, television, and other communication systems.</p>
+      <p>The three primary types of analog modulation are:</p>
+      <ul>
+        <li><strong>Amplitude Modulation (AM)</strong>: Varies the amplitude of the carrier signal.</li>
+        <li><strong>Frequency Modulation (FM)</strong>: Varies the frequency of the carrier signal.</li>
+        <li><strong>Phase Modulation (PM)</strong>: Varies the phase of the carrier signal.</li>
+      </ul>
+      <p>Analog modulation has been widely used for audio broadcasting, video signals, and other forms of analog communication.</p>
+      <p><strong>Key Formula for AM:</strong> <code>AM(t) = A_c [1 + m_a cos(2πf_mt)] cos(2πf_ct)</code></p>
+      <p>Amplitude modulation is often used in AM radio broadcasting and other types of analog audio transmission.</p>
+     
+      <p><img src="https://www.thestudyias.com/blogs/wp-content/uploads/2024/09/unnamed-11-4.png" alt="Analog Modulation Diagram"></p>
+    </section>
+
+    <section class="main-section" id="digital_modulation">
+      <header>Digital Modulation</header>
+      <p>Digital modulation involves encoding digital data into an analog carrier signal, typically by varying the carrier's amplitude, frequency, or phase in discrete steps. It is commonly used in digital communication systems like satellite communications and wireless data transmission.</p>
+      <p>Digital modulation is often used for transmitting data in a more robust manner, providing better resistance to noise and interference compared to analog methods.</p>
+      <ul>
+        <li><strong>Binary Phase Shift Keying (BPSK)</strong>: Uses two distinct phases to represent binary data.</li>
+        <li><strong>Quadrature Amplitude Modulation (QAM)</strong>: Combines both amplitude and phase modulation to represent data.</li>
+        <li><strong>Frequency Shift Keying (FSK)</strong>: Represents digital data by varying the frequency of the carrier.</li>
+      </ul>
+      <p>Digital modulation is widely used in digital communication systems, including wireless networks, satellite communication, and high-speed internet.</p>
+      <p><strong>Key Formula for BPSK:</strong> <code>BPSK(t) = A_c cos[2πf_ct + m_b π]</code></p>
+     
+      <p><img src="https://miro.medium.com/v2/resize:fit:1302/1*2w-HR_LpeuFvhR31PvHnJA.png" alt="Digital Modulation Diagram"></p>
+    </section>
+
+    <section class="main-section" id="amplitude_modulation">
+      <header>Amplitude Modulation</header>
+      <p>Amplitude Modulation (AM) is a method where the amplitude of the carrier signal is varied according to the instantaneous value of the message signal. This is commonly used in AM radio broadcasting.</p>
+      <ul>
+        <li><strong>Carrier Signal:</strong> A high-frequency signal used as a basis for modulation.</li>
+        <li><strong>Message Signal:</strong> A low-frequency signal representing the audio or data to be transmitted.</li>
+        <li><strong>Modulation Index:</strong> The ratio of the message signal's amplitude to the carrier's amplitude.</li>
+      </ul>
+      <p>AM is widely used in broadcast radio and television, although it is being replaced by more efficient methods such as FM.</p>
+      <p><strong>Formula for AM:</strong> <code>AM(t) = A_c [1 + m_a cos(2πf_mt)] cos(2πf_ct)</code></p>
+      <p>The modulation index determines the efficiency of the AM transmission.</p>
+      
+      <p><img src="https://electronicscoach.com/wp-content/uploads/2018/09/amplitude-modulate-wave-1-1.jpg" alt="Amplitude Modulation Diagram"></p>
+    </section>
+
+    <section class="main-section" id="frequency_modulation">
+      <header>Frequency Modulation</header>
+      <p>Frequency Modulation (FM) is a modulation technique where the frequency of the carrier is varied in proportion to the message signal. FM offers better noise immunity compared to AM.</p>
+      <ul>
+        <li><strong>FM Signal:</strong> A carrier signal whose frequency varies according to the amplitude of the message signal.</li>
+        <li><strong>Frequency Deviation:</strong> The amount by which the carrier frequency changes based on the message signal.</li>
+        <li><strong>FM Bandwidth:</strong> FM requires a larger bandwidth compared to AM for the same signal.</li>
+      </ul>
+      <p>FM is commonly used in FM radio broadcasting, radar systems, and communication satellites.</p>
+      <p><strong>Key Formula for FM:</strong> <code>FM(t) = A_c cos[2πf_ct + β sin(2πf_mt)]</code>
+      <p><img src="data:image/jpeg;base64,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" alt="Frequency Modulation Diagram"></p>
+    </section>
+
+    <section class="main-section" id="phase_modulation">
+      <header>Phase Modulation</header>
+      <p>Phase Modulation (PM) is a modulation technique where the phase of the carrier signal is varied in accordance with the message signal.</p>
+      <ul>
+        <li><strong>Phase Shift:</strong> The change in the phase of the carrier signal based on the message signal.</li>
+        <li><strong>Phase Deviation:</strong> The maximum amount of phase change that occurs during modulation.</li>
+        <li><strong>PM Signal:</strong> The resulting signal after phase modulation has been applied to the carrier signal.</li>
+      </ul>
+      <p>PM is widely used in digital communications systems, especially in satellite communications and wireless networking.</p>
+      <p><strong>Key Formula for PM:</strong> <code>PM(t) = A_c cos[2πf_ct + φ_m sin(2πf_mt)]</code></p>
+      
+      <p><img src="https://electronicscoach.com/wp-content/uploads/2019/03/phase-modulated-waveform.jpg" alt="Phase Modulation Diagram"></p>
+    </section>
+  </main>
+</body>
+<footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2003-ka-Balak- All Rights Reserved</p>
+    
+  </div>
+</footer>
+
+
+</html>
+
+
